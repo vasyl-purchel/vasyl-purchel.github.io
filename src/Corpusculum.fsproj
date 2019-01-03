@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Import/Fable.Import.Showdown.fs" />
+    <Compile Include="Import/Fable.Import.Lowdb.fs" />
+    <Compile Include="Global/Render.fs" />
+    <Compile Include="Global/Constants.fs" />
+    <Compile Include="Global/Logger.fs" />
+    <Compile Include="Global/Router.fs" />
+    <Compile Include="Tiles/Types.fs" />
+    <Compile Include="Tiles/View.fs" />
+    <Compile Include="Types.fs" />
+    <Compile Include="State.fs" />
+    <Compile Include="App.fs" />
+  </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
+</Project>
