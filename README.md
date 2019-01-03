@@ -29,6 +29,6 @@ Run: `./fake.sh build -t Watch`
 - The breakpoint will be caught in vscode
 
 [homepage]: http://vasyl-purchel.github.io/
-[build status]: https://ci.appveyor.com/api/projects/status/0tvs4krihppac8fj?svg=true
-[appveyor]: https://ci.appveyor.com/project/VasylPurchel/corpusculum
+[build status]: https://ci.appveyor.com/api/projects/status/0s5qaeqf95duu1gq?svg=true
+[appveyor]: https://ci.appveyor.com/project/VasylPurchel/vasyl-purchel-github-io
 [vscode debugger for chrome]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome
