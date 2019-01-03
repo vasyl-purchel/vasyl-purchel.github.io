@@ -17,4 +17,4 @@ branches:
     - src
 
 deploy_script:
-  - cmd: fake.cmd -t Publish
+  - cmd: fake.cmd build -t Publish

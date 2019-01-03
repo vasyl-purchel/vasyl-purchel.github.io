@@ -10,16 +10,16 @@ open Fulma
 
 open Tiles.Types
 
-let private sourceCodeButton =
-  Button.a [ Button.Props [ Href Constants.GithubPage ] ]
-           [ Icon.icon [ ] [ Fa.i [ Fa.Brand.Github ] [ ] ]
-             span [ ] [ str "Source" ] ]
-
 let private navbarEnd =
     Navbar.End.div [ ]
         [ Navbar.Item.div [ ]
             [ Field.div [ Field.IsGrouped ]
-                [ Control.p [ ] [ sourceCodeButton ] ] ] ]
+                [ Control.p [ ]
+                    [ Button.a [ Button.Props [ Href Constants.GithubPage ] ]
+                        [ Icon.icon [ ] [ Fa.i [ Fa.Brand.Github ] [ ] ]
+                          span [ ] [ str "Source" ] ] ]
+                  Control.p [ ]
+                    [ Image.image [ ] [ img [ Src Constants.BuildStatusBadge ] ] ] ] ] ]
 
 let private navbarStart dispatch =
   let games =
@@ -82,7 +82,9 @@ let private renderPage model dispatch =
 let private root model dispatch =
     div [ ]
         [ navbarView model.IsBurgerOpen dispatch
-          renderPage model dispatch ]
+          Section.section [ ]
+            [ Container.container [ Container.IsFluid ]
+                [ renderPage model dispatch ] ] ]
 
 
 open Elmish.React
