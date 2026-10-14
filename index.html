@@ -1,16 +1,26 @@
 <!doctype html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOLVE: Math Hunter</title>
+    <link rel="stylesheet" href="/style-9302c16b6afdfc79.css" integrity="sha384-eelpYyzrR7NQ/+6yf6fzwjC2umMYfsKPUKxUAU5GaXXE5+A+2WclLSsbiG4b1EIe"/>
+    <!-- KaTeX is vendored by `just vendor-katex`; the app falls back to raw TeX without it. -->
+    
+    <link rel="stylesheet" href="katex/katex.min.css" />
+    <script src="katex/katex.min.js"></script>
+    
+<script type="module">
+import init, * as bindings from '/app-9f901a8d33740106.js';
+const wasm = await init({ module_or_path: '/app-9f901a8d33740106_bg.wasm' });
 
-<head>
-    <title>Corpusculum</title>
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.ico" sizes="32x32" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.ico" sizes="16x16" />
-<link href="style.css" rel="stylesheet"></head>
 
-<body>
-    <div id="elmish-app"></div>
-<script type="text/javascript" src="vendors.9fefec17b5f0b703b5a2.js"></script><script type="text/javascript" src="app.9fefec17b5f0b703b5a2.js"></script></body>
+window.wasmBindings = bindings;
 
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+  <link rel="modulepreload" href="/app-9f901a8d33740106.js" crossorigin="anonymous" integrity="sha384-WLfksbvuFk5AXT4hZfwNgbkLy/+2h4BEsyiXKPi11qk/BMffTCCytSBaMIE5BK91"><link rel="modulepreload" href="/snippets/surrealdb-kvs-indxdb-1a2bf5e6ab993a2b/src/js/db.js" crossorigin="anonymous" integrity="sha384-bBVKu03coI4OBd6+vrAbZw/P6gJNAEmUrSsMpuskLNYRFUU+K9MBewHNUNNw+xp4"><link rel="preload" href="/app-9f901a8d33740106_bg.wasm" crossorigin="anonymous" integrity="sha384-nEBwvl9MfjanLilWe79LWKtGeDwjG6OHmLmImFMiZ9Olu3Iiapko+E2DxPpWI+ZB" as="fetch" type="application/wasm"></head>
+  <body></body>
 </html>
